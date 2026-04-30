@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка напитков - Астана</title>
+    <style>
+        @font-face {
+            font-family: 'AvanteInt';
+            src: url('./fonts/ofont.ru_a_AvanteInt.ttf') format('truetype');
+            font-weight: 400 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Umumiy sozlamalar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'AvanteInt', sans-serif;
+        }
+
+        body {
+            background-color:#FCD50F; /* Sariq fon */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Konteyner */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        /* Logo qismi */
+        .logo {
+            margin-bottom: 25px;
+        }
+
+        .logo img {
+            width: 160px; /* Logo hajmi */
+            height: auto;
+            display: block;
+        }
+
+        /* Matnlar stili */
+        .title {
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            margin-bottom: 2px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        /* Qora banner */
+        .banner {
+            background-color: #000;
+            color: #f7ce16;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        /* Telefon raqami */
+        .phone {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        /* Tugmalar */
+        .btn {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 360px;
+            text-align: center;
+            transition: all 0.2s ease;
+            margin-bottom: 15px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn:active {
+            transform: scale(0.96);
+        }
+
+        /* Qo'ng'iroq tugmasi */
+        .btn-call {
+            background-color: #e31e33;
+            padding: 18px;
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* WhatsApp tugmasi */
+        .btn-whatsapp {
+            background-color: #00a859;
+            padding: 12px 15px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .btn-whatsapp span {
+            font-size: 36px;
+            font-weight: 800;
+            display: block;
+        }
+
+        /* Pastki matnlar */
+        .footer {
+            margin-top: 35px;
+        }
+
+        .footer-small {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        .footer-large {
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .footer-medium {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        /* Moslashuvchanlik (Adaptive) */
+        @media (max-width: 768px) {
+            .container { max-width: 92vw; }
+            .logo img { width: 160px; }
+            .title { font-size: 28px; }
+            .subtitle { font-size: 18px; }
+            .banner { font-size: 14px; padding: 9px 18px; }
+            .phone { font-size: 36px; }
+            .btn-call { font-size: 24px; padding: 16px; }
+            .btn-whatsapp { font-size: 18px; }
+            .btn-whatsapp span { font-size: 32px; }
+            .footer-small { font-size: 14px; }
+            .footer-large { font-size: 26px; }
+            .footer-medium { font-size: 21px; }
+        }
+
+        @media (max-width: 480px) {
+            .logo img { width: 157px; }
+            .title { font-size: 24px; }
+            .subtitle { font-size: 16px; }
+            .banner { font-size: 12px; padding: 8px 15px; }
+            .phone { font-size: 31px; }
+            .btn-call { font-size: 22px; padding: 15px; }
+            .btn-whatsapp { padding: 10px; font-size: 16px; }
+            .btn-whatsapp span { font-size: 28px; }
+            .footer-small { font-size: 13px; }
+            .footer-large { font-size: 22px; }
+            .footer-medium { font-size: 19px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo qismi -->
+        <div class="logo">
+            <img src="https://i.postimg.cc/m2QS35gR/llogo-1-2.png" alt="KOSTA Logo">
+        </div>
+
+        <h1 class="title">ДОСТАВКА НАПИТКОВ</h1>
+        <p class="subtitle">До любой точки г. Астана</p>
+
+        <div class="banner">
+            ДОСТАВКА ПО ГОРОДУ &mdash; БЫСТРО И УДОБНО
+        </div>
+
+        <div class="phone">
+            +7 707 505 57 47
+        </div>
+
+        <a href="tel:+77075055747" class="btn btn-call">ПОЗВОНИТЬ</a>
+        
+        <a href="https://wa.me/77075055747?text=Здравствуйте!Пишу с сайта.Хочу сделать заказ." class="btn btn-whatsapp">
+            написать на<br>
+            <span>WhatsApp</span>
+        </a>
+
+        <div class="footer">
+            <p class="footer-small">ОДНА ИЗ КРУПНЕЙШИХ СЕТЕЙ</p>
+            <p class="footer-large">БОЛЕЕ 20 ФИЛИАЛОВ</p>
+            <p class="footer-medium">по г. Астана</p>
+        </div>
+    </div>
+
+</body>
+</html>
